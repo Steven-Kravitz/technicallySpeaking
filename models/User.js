@@ -14,7 +14,7 @@ User.init( // Initializes the User class to take in dev input for it's structure
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true //System Generated
+            autoIncrement: true //System Generated +1
         },
         name: {
             type: DataTypes.STRING,
