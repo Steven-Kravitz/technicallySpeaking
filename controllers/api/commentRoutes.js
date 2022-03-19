@@ -1,4 +1,3 @@
-// WORK ON COMMENT ROUTES NEXT THEN INDEX THEN DASH/HOME THEN INDEX
 const router = require('express').Router()
 const {Comment} = require('../../models')
 const withAuth = require('../../utils/auth')
