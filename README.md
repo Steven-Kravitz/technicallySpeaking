@@ -12,7 +12,8 @@ This is a small blog for users to create posts about technology, comment on othe
 - [Features](#features)
 
 ## Installation
-Simply open the application on the heroku link provided below
+Open the application on the heroku link provided below </br>
+https://whispering-hollows-81075.herokuapp.com/
 
 ## Usage
 First time users should head to the register page to sign up for an account in the system. At which point they'll be able to log in on the login tab. Then they'll have access to posts made by other users. They'll also be able to create their own postings!
