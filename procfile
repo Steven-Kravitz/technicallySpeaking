@@ -1,0 +1,1 @@
+"heroku-postbuild": "npm run build"
