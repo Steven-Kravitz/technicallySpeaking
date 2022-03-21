@@ -28,9 +28,9 @@ const sess = {
 app.use(session(sess));
 
 // Handlebars
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
 const hbs = exphbs.create({ helpers });
+app.set('view engine', 'handlebars');
+app.engine('handlebars', hbs.engine);
 
 // Middleware
 app.use(express.json());
@@ -40,5 +40,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
-    app.listen(PORT, () => console.log(`Now listening on port: ${PORT}`));
+    app.listen(PORT, () => console.log(`Now live on localhost:${PORT}`));
   });

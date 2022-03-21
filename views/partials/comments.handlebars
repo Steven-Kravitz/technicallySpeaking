@@ -1,0 +1,14 @@
+<div class="container" id="comments-container">
+<div class="comments">
+    {{#each this}}
+    <div class="single-comment">
+        <div class="text">
+            {{comment}}
+        </div>
+        <div class="info card-subtitle text-muted">
+            By {{user.username}} Posted on {{format_date created_at}}
+        </div>
+    </div>
+    {{/each}}
+</div>
+</div>

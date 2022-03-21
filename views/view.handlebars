@@ -1,0 +1,27 @@
+
+{{>post-body post}}
+
+{{#if loggedIn}}
+<div class="container">
+    <div class="card-header">
+        <h3>Add New Comment</h3>
+    </div>
+    <form id="comment-form" class="card">
+        <div class="card-body">
+            <input type="hidden" name="post-id" value="{{post.id}}"/>
+        <div class="form-group">
+            <label class="form-label" for="comment-body">Comment</label>
+
+            <textarea name="comment-body" class="form-control"></textarea>
+        </div>
+            <button type="submit" class="comment-btn btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+
+{{/if}}
+
+{{>comments post.comments}}
+
+
+<script src="/js/comment.js"></script>
